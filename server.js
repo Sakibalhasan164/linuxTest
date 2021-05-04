@@ -15,4 +15,4 @@ app.get("/local", (req, res) => {
   res.send("this is from the Local Machine");
 });
 
-app.listen(process.env.PORT, console.log("server is running"));
+app.listen(process.env.PORT || 3000, console.log("server is running"));
